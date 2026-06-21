@@ -126,11 +126,12 @@ High-Availability System Design: Implementation of decoupled Application Load Ba
 
 Linux Systems Administration: Competence with WSL execution, SSH-key validation mechanisms, process management via standard utilities, and core log diagnostics parsing.
 
-## Key Insights Learned
-Understanding System Launch Lifecycle Sequences: Learned that updating Launch Templates inside an Auto Scaling architecture does not alter existing runtime compute assets until active lifecycle recycling patterns or instance teardowns are initiated.
-
-Handling Modern Linux Environment Constraints (PEP 668): Experienced how newer OS variations (Ubuntu 24.04) enforce system-level package integrity checks by blocking global pip downloads, requiring localized virtual environment paths (python3 -m venv) or override criteria (--break-system-packages) for deployment scripts.
-
-Log-Driven Diagnostic Engineering: Discovered that checking /var/log/cloud-init-output.log is vital for diagnosing background infrastructure configuration issues when troubleshooting systems without active terminal outputs.
-
-The Importance of Dynamic Automation: Learned that setting up automated bootstrapping scripts saves significant time and effort, making it easy to configure scaling clusters without needing manual human adjustments.
+## What I have learned
+- Provisioned AWS infrastructure using Terraform
+- Created an Application Load Balancer (ALB)
+- Configured a Target Group and Health Checks
+- Created a Launch Template
+- Deployed an Auto Scaling Group
+- Automated Flask deployment using User Data
+- Verified traffic distribution across multiple EC2 instances
+- Demonstrated scalability and high availability concepts
